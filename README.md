@@ -11,9 +11,7 @@ You can preview pure components in the playground, (built with [cosmos](https://
 npm start
 ```
 
-## About
-
-Some of the technologies used internally are:
+## Built with
 
 * [React](https://github.com/facebook/react)
 * [Express](http://expressjs.com)
