@@ -1,0 +1,35 @@
+@import url('react-theme/colors.css');
+
+.markdown {
+  line-height: 1.5em;
+}
+
+.markdown h1, .markdown h2, .markdown h3, .markdown h4, .markdown h5, .markdown h6 {
+  font-size: 15px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 22px;
+}
+
+.markdown p {
+  margin: 0;
+}
+
+.markdown p + h1, .markdown p + h2, .markdown p + h3, .markdown p + h4, .markdown p + h5, .markdown p + h6,
+.markdown ul + h1, .markdown ul + h2, .markdown ul + h3, .markdown ul + h4, .markdown ul + h5, .markdown ul + h6,
+.markdown p + p {
+  margin-top: 1.5em;
+}
+
+.markdown img {
+  max-width: 100%;
+  display: block;
+  padding: 13px 0px;
+}
+
+.markdown blockquote {
+  border-left: 5px solid var(--color-gray);
+  margin: 1.5em 10px;
+  padding: 0.5em 10px;
+}

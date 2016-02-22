@@ -1,0 +1,36 @@
+@import url("react-theme/colors.css");
+
+:global(.react-autosuggest) {
+  extends: base from "./styles.css";
+}
+
+:global(.react-autosuggest__suggestions) {
+  position: absolute;
+  background-color: var(--color-white);
+  padding: 10px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  filter: drop-shadow(1px 12px 26px rgba(0, 0, 0, 0.298039));
+}
+
+:global(.react-autosuggest__suggestion) {
+  padding: 8px 12px;
+}
+
+:global(.react-autosuggest__suggestion--focused) {
+  background-color: var(--color-blue-dark);
+  color: var(--color-white);
+}
+
+:global(.react-autosuggest__suggestions-section) {
+
+}
+
+:global(.react-autosuggest__suggestions-section-name) {
+
+}
+
+:global(.react-autosuggest__suggestions-section-suggestions) {
+
+}

@@ -1,0 +1,30 @@
+.preview, .editor textarea, .container {
+  width: 100%;
+  height: 100%;
+}
+
+.controls {
+  padding-top: 30px;
+}
+
+.bordelessEditor textarea {
+  padding: 0;
+}
+
+.previewButtonContainer {
+  width: 136px;
+  display: inline-block;
+}
+
+.markdownHelpContainer {
+  display: inline-block;
+}
+
+.previewButtonContainer + .markdownHelpContainer {
+  padding-left: 5px;
+}
+
+.editor textarea, .preview p, .preview li {
+  font-size: 14px;
+  line-height: 1.5em;
+}

@@ -1,0 +1,165 @@
+@import url(react-theme/colors.css);
+@import url(react-theme/paddings.css);
+@import url(react-theme/borders.css);
+@import url(react-theme/fonts.css);
+
+:root {
+  --color-border: #ccc;
+  --color-border-focus: #66afe9;
+  --color-error-border: color(var(--color-red) blackness(+10%));
+  --color-error-box-shadow-focus: color(var(--color-error-border) lightness(+20%));
+  --color-help-text: #666;
+}
+
+.input {
+  display: block;
+  width: 100%;
+  padding: var(--padding-base-vertical) var(--padding-base-horizontal);
+  font-size: var(--font-size-base);
+  background-color: var(--color-white);
+  background-image: none;
+  color: var(--color-text);
+  border-radius: var(--border-radius);
+  border-style: solid;
+  border-width: 1px;
+  border-color: var(--color-border);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  resize: none;
+}
+
+.inputMedium {
+  padding: 12px 18px 10px;
+  height: auto;
+  font-size: 14px;
+  margin-bottom: 0;
+  line-height: 1.8;
+}
+.inputLarge, .inputXLarge {
+  padding: 22px 22px 18px;
+  height: auto;
+  margin-bottom: 0;
+}
+.inputLarge {
+  font-size: 15px;
+}
+.inputXLarge {
+  font-size: 18px;
+}
+
+.input:focus {
+  border-color: var(--color-border-focus);
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px rgba(102,175,233,.6)
+}
+
+.input[readonly] {
+  background-color: var(--color-gray);
+  opacity: 1;
+}
+
+.input[disabled] {
+  background-color: var(--color-gray);
+  opacity: 1;
+  cursor: not-allowed;
+}
+
+.inputHasError {
+  color: var(--color-red);
+  border-color: var(--color-error-border);
+}
+
+.inputHasError:focus {
+  border-color: var(--color-error-border);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 6px var(--color-error-box-shadow-focus);
+}
+
+.textInput, .select, .autosuggest {
+  height: 34px;
+}
+
+.textArea {
+  height: auto;
+  font-family: inherit;
+}
+
+.textLabel {
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+.textLabelBorderlessHasValue {
+  color: var(--color-black) !important;
+}
+.textLabelBorderlessHasError {
+  color: var(--color-error-border) !important;
+}
+
+.helpText {
+  display: 'inline-block';
+  max-width: 100%;
+  margin-top: 5px;
+  color: var(--color-help-text);
+  font-size: var(--font-size-base);
+}
+
+.formGroup {
+  margin-bottom: 15px;
+}
+
+.errorMessage {
+  padding: 10px 0;
+  color: var(--color-red);
+}
+
+.errorMessage:empty {
+  padding: 0;
+}
+
+.autosuggestDropdownContainer {
+  border: 1px solid var(--color-border);
+  list-style: none;
+  margin: 0;
+  padding: 16px;
+  position: absolute;
+  background-color: var(--color-white);
+}
+
+.autosuggestDropdownItem {
+  min-height: 34px;
+  cursor: pointer;
+}
+
+.solid {
+  border: 1px solid var(--color-gray-dark);
+  box-shadow: none;
+  outline: none;
+}
+.solid.inputHasValue {
+  border: 1px solid var(--color-text);
+}
+.solid.inputHasError {
+  border: 1px solid var(--color-red);
+}
+.solid.inputHasError::placeholder {
+  color: var(--color-red);
+}
+
+.listFields {
+  display: inline-block;
+  width: 70%;
+  padding-right: 15px;
+}
+.listItemButtons {
+  display: inline-block;
+  padding: 18px 15px 18px 0;
+  vertical-align: top;
+}
+.listItemSeparator {
+  border-top: 1px solid #ccc;
+  margin: 10px 0 20px;
+}
+.listItemAdd {
+  margin: 8px 0 20px;
+}
