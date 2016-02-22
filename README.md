@@ -19,8 +19,10 @@ npm start
 * [Webpack](http://webpack.github.io) for bundling
 * [Webpack Dev Middleware](http://webpack.github.io/docs/webpack-dev-middleware.html)
 * [Webpack Hot Middleware](https://github.com/glenjamin/webpack-hot-middleware)
-* [ESLint](http://eslint.org) to maintain a consistent code style
+* [css-modules](https://github.com/css-modules/css-modules)
 * [style-loader](https://github.com/webpack/style-loader) and [postcss-loader](https://github.com/postcss/postcss-loader) to import stylesheets and transform styles with [postCSS plugins](https://github.com/postcss/postcss#plugins)
+* [SVGO](https://github.com/svg/svgo) to optimize icons and autogenerate React components from SVG files
+* [ESLint](http://eslint.org) and [EditorConfig](http://editorconfig.org/) to maintain a consistent code style
 
 ## License
 [MIT License](http://opensource.org/licenses/MIT)
