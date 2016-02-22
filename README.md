@@ -15,7 +15,7 @@ npm start
 
 * [React](https://github.com/facebook/react)
 * [Express](http://expressjs.com)
-* [Babel](http://babeljs.io) for ES6 and ES7 magic
+* [Babel](http://babeljs.io) for ES2015 and JSX transpilation
 * [Webpack](http://webpack.github.io) for bundling
 * [Webpack Dev Middleware](http://webpack.github.io/docs/webpack-dev-middleware.html)
 * [Webpack Hot Middleware](https://github.com/glenjamin/webpack-hot-middleware)
